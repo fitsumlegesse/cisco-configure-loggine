@@ -54,23 +54,25 @@ Router(config)#end <br/>
 ###### Terminal Logging 
 Use the terminal monitor command to enable the displaying of log messages to your VTY: <br/>
 
-Router#terminal monitor <br/>
-Router# <br/>
+>Router#terminal monitor <br/>
+>
+>Router# <br/>
 
 To disable logging to your VTY session, use the following command: <br/>
 
-Router#terminal no monitor <br/>
-Router# <br/>
+>Router#terminal no monitor <br/>
+>
+>Router# <br/>
 
 
 ### Syslog  Server Logging 
 If you have any syslog server please find the below simple config. <br/>
 
-router#conf t <br/>
-
-Router(config#logging host x.x.x.x <br/>
-
-Router(config)#logging traps (i.e 0 1 2 3 4 5 .. according to your requirement) <br/>
+>router#conf t <br/>
+>
+>Router(config#logging host x.x.x.x <br/>
+>
+>Router(config)#logging traps (i.e 0 1 2 3 4 5 .. according to your requirement) <br/>
 
 before enabling logging be sure that your router is properly configure to collect proper time from any NTP server or manually configure to get time <br/>
 >Command to set time manually on router is 
@@ -78,15 +80,16 @@ before enabling logging be sure that your router is properly configure to collec
 to use ntp server use 
 > “ntp server x.x.x.x” to sync clock to router.
 
-###### Clearing the Router's Log
+### Clearing the Router's Log
 
 Use the clear logging command to clear the router's internal log buffer:
 
-Router#clear logging
-Clear logging buffer [confirm]<enter>
-Router#
+>Router#clear logging
+>
+>Clear logging buffer [confirm]<enter>
+>Router#
  
-###### To display the state of system logging 
+### To display the state of system logging 
 use the show logging privileged EXEC command.
  >Router# show logging
 
